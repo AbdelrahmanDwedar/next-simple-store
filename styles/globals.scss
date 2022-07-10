@@ -14,3 +14,10 @@ a {
 * {
   box-sizing: border-box;
 }
+
+:root {
+  /* colors */
+  --background-color: hsl(0, 0%, 70%);
+  --text-main-color: hsl(0, 70%, 0%);
+  
+}
