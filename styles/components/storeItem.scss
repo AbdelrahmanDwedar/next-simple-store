@@ -1,0 +1,36 @@
+@tailwind components;
+@tailwind utilities;
+
+.cardBody {
+	&>.cardTitle {
+		@apply flex justify-between align-baseline mb-4;
+
+		.productName {
+			@apply text-2xl;
+		}
+
+		.productPrice {
+			@apply ml-2 text-muted;
+		}
+	}
+
+	&>.addingSection {
+		@apply mt-auto;
+
+		&>.addToCartBtn {
+			@apply w-full;
+		}
+
+		&>.increaseBtn {
+			@apply flex flex-col justify-center items-center;
+		}
+
+		&>.decreaseBtn {
+			@apply flex flex-col justify-center items-center;
+		}
+
+		&>.addedCount {
+			@apply text-sm
+		}
+	}
+}
