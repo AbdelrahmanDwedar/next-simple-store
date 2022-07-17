@@ -1,0 +1,14 @@
+@mixin linkEffect {
+	&:after {
+		@apply absolute w-full h-0.5 bottom-0 left-0 bg-black ;
+		content: '';
+		transform: scaleX(0);
+		transform-origin: bottom right;
+		transition: transform 0.50s ease-out;
+
+	}
+	&:hover:after {
+		transform: scaleX(1);
+		transform-origin: bottom left;
+	}
+}
