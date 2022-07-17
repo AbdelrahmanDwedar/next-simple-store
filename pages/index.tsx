@@ -4,10 +4,11 @@ import Header from './layouts/_header';
 import { Button, Col, Row } from "react-bootstrap";
 import storeItems from '../public/data/items.json';
 import { StoreItem } from './Components/_storeItem';
+import { ShoppingCartProvider } from "./context/_shoppingCartContext";
 
 const Home: NextPage = () => {
   return (
-    <>
+    <ShoppingCartProvider>
       <Header title="Home Page" />
       <main className={styles.main}>
         <h1 className={styles.title}>Shopping List</h1>
@@ -23,7 +24,7 @@ const Home: NextPage = () => {
           </Row>
         </section>
       </main>
-    </>
+    </ShoppingCartProvider>
   );
 }
 
