@@ -28,7 +28,7 @@ main.main {
 				p.cardDiscription {}
 
 				button.cardButton {
-					@apply outline-none border-none rounded-xl p-4 bg-blue-600 items-center;
+					@apply outline-none border-none round-xl p-4 bg-primary items-center;
 				}
 			}
 		}
