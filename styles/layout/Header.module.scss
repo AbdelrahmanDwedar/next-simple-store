@@ -1,8 +1,17 @@
+@use '../helpers/mixins';
+@tailwind components;
+@tailwind utilities;
+
 header.header {
-    @apply bg-grey !m-0 mt-0 px-2 flex justify-between;
+    @apply bg-grey mt-0 px-2 flex justify-between;
+    margin: 0 !important;
 
     nav.nabar {
         @apply flex justify-between;
+
+        h3 {
+            @apply text-primary
+        }
 
         ul.nav {
             list-style: none;
@@ -16,19 +25,7 @@ header.header {
                     // hover
                     @apply hover:text-black;
 
-                    // after
-                    &:after {
-                        @apply absolute w-full h-0.5 bottom-0 left-0 bg-black ;
-                        content: '';
-                        transform: scaleX(0);
-                        transform-origin: bottom right;
-                        transition: transform 0.50s ease-out;
-
-                        &:hover {
-                            transform: scaleX(1);
-                            transform-origin: bottom left;
-                        }
-                    }
+                    @include mixins.linkEffect;
                 }
             }
         }
