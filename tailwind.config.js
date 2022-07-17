@@ -6,11 +6,11 @@ module.exports = {
   ],
   theme: {
     colors: {
-      'muted': '#00000095',
-      'danger': '#F00',
-      'primary': '#4646fc',
-      'grey': 'grey',
       'black': 'black',
+      'grey': 'grey',
+      'primary': '#4646fc',
+      'danger': '#F00',
+      'muted': '#00000095',
     },
     extend: {},
   },
