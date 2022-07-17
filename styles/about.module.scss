@@ -1,0 +1,23 @@
+@use './helpers/mixins' ;
+@tailwind components;
+@tailwind utilities;
+
+main.main {
+	@apply flex justify-center justify-around;
+	.aboutProjectSection {
+		@apply bg-grey mt-14 p-6 rounded-3xl shadow-2xl;
+
+		h3.aboutHeading {
+			@apply text-primary text-center;
+		}
+		p.aboutText {
+			@apply text-muted text-center;
+
+			a {
+				@apply hover:text-black;
+
+				@include mixins.linkEffect;
+			}
+		}
+	}
+}
