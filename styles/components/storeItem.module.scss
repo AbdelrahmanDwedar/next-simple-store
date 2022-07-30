@@ -1,8 +1,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .cardBody {
-	&>.cardTitle {
+	@apply flex flex-col;
+	
+		&>.cardTitle {
 		@apply flex justify-between align-baseline mb-4;
 
 		.productName {

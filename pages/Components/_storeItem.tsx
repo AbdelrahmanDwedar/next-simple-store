@@ -1,6 +1,7 @@
-import { Button, Card } from "react-bootstrap"
-import { useShoppingCart } from "../context/_shoppingCartContext"
-import { formatCurrency } from "../utilities/_formatCurrency"
+import { Button, Card } from "react-bootstrap";
+import { useShoppingCart } from "../context/_shoppingCartContext";
+import { formatCurrency } from "../utilities/_formatCurrency";
+import styles from "../../styles/components/storeItem.module.scss";
 
 type StoreItemProps = {
   id: number
@@ -26,28 +27,28 @@ export function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
         height="200px"
         style={{ objectFit: "cover" }}
       />
-      <Card.Body className="d-flex flex-column">
-        <Card.Title className="d-flex justify-content-between align-items-baseline mb-4">
-          <span className="fs-2">{name}</span>
-          <span className="ms-2 text-muted">{formatCurrency(price)}</span>
+      <Card.Body className={styles.cardBody}>
+        <Card.Title className={styles.cardTitle}>
+          <span className={styles.productName}>{name}</span>
+          <span className={styles.productPrice}>{formatCurrency(price)}</span>
         </Card.Title>
-        <div className="mt-auto">
+        <div className={styles.addingSection}>
           {quantity === 0 ? (
-            <Button className="w-100" onClick={() => increaseCartQuantity(id)}>
+            <Button className={styles.addToCartBtn} onClick={() => increaseCartQuantity(id)}>
               + Add To Cart
             </Button>
           ) : (
             <div
-              className="d-flex align-items-center flex-column"
+              className={styles.increaseBtn}
               style={{ gap: ".5rem" }}
             >
               <div
-                className="d-flex align-items-center justify-content-center"
+                className={styles.decreaseBtn}
                 style={{ gap: ".5rem" }}
               >
                 <Button onClick={() => decreaseCartQuantity(id)}>-</Button>
                 <div>
-                  <span className="fs-3">{quantity}</span> in cart
+                  <span className={styles.addedCount}>{quantity}</span> in cart
                 </div>
                 <Button onClick={() => increaseCartQuantity(id)}>+</Button>
               </div>
