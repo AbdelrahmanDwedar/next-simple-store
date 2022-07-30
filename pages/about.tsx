@@ -8,7 +8,7 @@ interface AboutProps {
 
 }
 
-const About: FunctionComponent<AboutProps> = () => {
+function About() {
     return (
         <ShoppingCartProvider>
             <Header title="About Us" />
