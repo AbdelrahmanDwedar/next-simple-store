@@ -1,14 +1,9 @@
 import { FunctionComponent } from "react";
 
-interface ProductsProps {
-    
-}
- 
+interface ProductsProps {}
+
 const Products: FunctionComponent<ProductsProps> = () => {
-    return ( 
-        <>
-        </>
-     );
-}
- 
+	return <></>;
+};
+
 export default Products;

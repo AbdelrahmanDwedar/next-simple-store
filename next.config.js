@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-}
+	reactStrictMode: true,
+};
 module.exports = {
-  experimental: {
-    runtime: 'nodejs',
-    serverComponents: true,
-  },
-}
+	experimental: {
+		runtime: "nodejs",
+		serverComponents: true,
+	},
+};

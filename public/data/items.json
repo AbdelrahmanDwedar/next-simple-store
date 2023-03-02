@@ -1,20 +1,20 @@
 [
-    {
-        "id": 1,
-        "name": "Book",
-        "price": 18,
-        "imgUrl": "https://www.oecd-nea.org/upload/docs/image/jpeg/2020-11/book_stack.jpg"
-    },
-    {
-        "id": 2,
-        "name": "Computers",
-        "price": 186,
-        "imgUrl": "https://i.pcmag.com/imagery/reviews/03vgWGzPszXGuw7ZDpulrMm-1..v1638566437.jpg"
-    },
-    {
-        "id": 3,
-        "name": "Potato",
-        "price": 8.9,
-        "imgUrl": "https://cdn.mos.cms.futurecdn.net/iC7HBvohbJqExqvbKcV3pP.jpg"
-    }
+	{
+		"id": 1,
+		"name": "Book",
+		"price": 18,
+		"imgUrl": "https://www.oecd-nea.org/upload/docs/image/jpeg/2020-11/book_stack.jpg"
+	},
+	{
+		"id": 2,
+		"name": "Computers",
+		"price": 186,
+		"imgUrl": "https://i.pcmag.com/imagery/reviews/03vgWGzPszXGuw7ZDpulrMm-1..v1638566437.jpg"
+	},
+	{
+		"id": 3,
+		"name": "Potato",
+		"price": 8.9,
+		"imgUrl": "https://cdn.mos.cms.futurecdn.net/iC7HBvohbJqExqvbKcV3pP.jpg"
+	}
 ]

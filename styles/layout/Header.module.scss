@@ -1,33 +1,33 @@
-@use '../helpers/mixins';
+@use "../helpers/mixins";
 @tailwind components;
 @tailwind utilities;
 
 header.header {
-    @apply bg-grey mt-0 px-2 flex justify-between;
-    margin: 0 !important;
+	@apply bg-grey mt-0 px-2 flex justify-between;
+	margin: 0 !important;
 
-    nav.nabar {
-        @apply flex justify-between;
+	nav.nabar {
+		@apply flex justify-between;
 
-        h3 {
-            @apply text-primary
-        }
+		h3 {
+			@apply text-primary;
+		}
 
-        ul.nav {
-            list-style: none;
+		ul.nav {
+			list-style: none;
 
-            li.navItem {
-                @apply inline-block ml-4;
+			li.navItem {
+				@apply inline-block ml-4;
 
-                a {
-                    @apply text-muted relative;
+				a {
+					@apply text-muted relative;
 
-                    // hover
-                    @apply hover:text-black;
+					// hover
+					@apply hover:text-black;
 
-                    @include mixins.linkEffect;
-                }
-            }
-        }
-    }
+					@include mixins.linkEffect;
+				}
+			}
+		}
+	}
 }

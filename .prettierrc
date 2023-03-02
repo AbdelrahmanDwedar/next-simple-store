@@ -1,5 +1,12 @@
 {
+	"useTabs": true,
 	"tabWidth": 4,
 	"arrowParens": "always",
-	"useTabs": true
+	"bracketSameLine": true,
+	"bracketSpacing": true,
+	"editorconfig": true,
+	"semi": true,
+	"endOfLine": "lf",
+	"jsxSingleQuote": false,
+	"embeddedLanguageFormatting": "auto"
 }

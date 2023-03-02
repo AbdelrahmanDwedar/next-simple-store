@@ -1,11 +1,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .cardBody {
 	@apply flex flex-col;
-	
-		&>.cardTitle {
+
+	& > .cardTitle {
 		@apply flex justify-between align-baseline mb-4;
 
 		.productName {
@@ -17,23 +16,23 @@
 		}
 	}
 
-	&>.addingSection {
+	& > .addingSection {
 		@apply mt-auto;
 
-		&>.addToCartBtn {
+		& > .addToCartBtn {
 			@apply w-full;
 		}
 
-		&>.increaseBtn {
+		& > .increaseBtn {
 			@apply flex flex-col justify-center items-center;
 		}
 
-		&>.decreaseBtn {
+		& > .decreaseBtn {
 			@apply flex flex-col justify-center items-center;
 		}
 
-		&>.addedCount {
-			@apply text-sm
+		& > .addedCount {
+			@apply text-sm;
 		}
 	}
 }
