@@ -4,7 +4,6 @@
 	"arrowParens": "always",
 	"bracketSameLine": true,
 	"bracketSpacing": true,
-	"editorconfig": true,
 	"semi": true,
 	"endOfLine": "lf",
 	"jsxSingleQuote": false,
