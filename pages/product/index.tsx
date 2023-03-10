@@ -1,8 +1,4 @@
-import { FunctionComponent } from "react";
-
-interface ProductsProps {}
-
-const Products: FunctionComponent<ProductsProps> = () => {
+function Products() {
 	return <></>;
 };
 

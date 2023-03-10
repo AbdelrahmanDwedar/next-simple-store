@@ -1,10 +1,7 @@
-import { FunctionComponent } from "react";
 import Header from "./layouts/_header";
 import styles from "../styles/about.module.scss";
 import { ShoppingCartProvider } from "./context/_shoppingCartContext";
 import { Card } from "react-bootstrap";
-
-interface AboutProps {}
 
 function About() {
 	return (

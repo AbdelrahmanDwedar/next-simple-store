@@ -1,13 +1,12 @@
-import { NextComponentType, NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
+import styles from "styles/layout/Header.module.scss";
 import {
 	JSXElementConstructor,
 	ReactElement,
 	ReactFragment,
 	ReactPortal,
 } from "react";
-import styles from "/styles/layout/Header.module.scss";
 
 export function Header(props: { title: string }): ReactElement {
 	return (
