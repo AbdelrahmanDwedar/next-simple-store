@@ -1,0 +1,8 @@
+*.md
+*.lock
+*.log
+dockerfile
+LICENSE
+.gitignore
+.prettierignore
+.eslintignore
