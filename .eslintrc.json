@@ -4,9 +4,11 @@
 	"parserOptions": { "project": ["./tsconfig.json"] },
 	"plugins": ["@typescript-eslint", "react"],
 	"rules": {
-		"indent": ["error", 4],
-		"linebreak-style": ["error", "unix"],
+		"indent": ["warn", "tab"],
+		"linebreak-style": ["warn", "unix"],
 		"quotes": ["error", "double"],
-		"semi": ["error", "always"]
+		"semi": ["error", "always"],
+		"camelcase": ["error", {"ignoreImports": true}],
+		"comma-spacing": "warn"
 	}
 }
